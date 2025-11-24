@@ -50,11 +50,13 @@ Documentation = "https://github.com/HKUDS/RAG-Anything"
 Repository = "https://github.com/HKUDS/RAG-Anything"
 Issues = "https://github.com/HKUDS/RAG-Anything/issues"
 
-[tool.uv]
-dev-dependencies = [
-    "pytest>=6.0",
+
+[dependency-groups]
+dev = [
+    "pre-commit",
+    "pytest",
     "pytest-asyncio",
-    "black",
+    "ruff",
     "isort",
     "flake8",
     "mypy",
